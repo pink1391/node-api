@@ -6,7 +6,16 @@ const router = require('../src/router/Users')
 const PORT = process.env.PORT || 3100
 
 app.use(express.json());
+
+app.use('/home',(req,res)=>{
+    res.json({
+        msg:"Hi I am from express after github cide pipeline"
+    })
+})
+
 app.use(router)
+
+
 
 app.get('/',(req,res)=>{
     res.send('Hello World')
