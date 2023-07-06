@@ -9,7 +9,8 @@ app.use(express.json());
 
 app.use('/home',(req,res)=>{
     res.json({
-        msg:"Hi I am from express after github cide pipeline"
+        msg:"Hi I am from express after github cide pipeline",
+        test:"Hello Again"
     })
 })
 
